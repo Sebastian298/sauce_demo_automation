@@ -29,7 +29,7 @@ def main():
         assert 'https://www.saucedemo.com/inventory.html' == driver.current_url,'No se redirigio a la pagina principal'
         main_page.go_to_menu_options()
         main_page.go_to_logout()
-        assert 'https://www.saucedemo,,.com/' == driver.current_url,'No se redirigio a la pagina principal'
+        assert 'https://www.saucedemo.com/' == driver.current_url,'No se redirigio a la pagina principal'
     except Exception as e:
         print(e)
         driver.save_screenshot('screenshots/error.png')
